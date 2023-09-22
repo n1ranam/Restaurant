@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("c.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      .form {
+        width: fit-content;
+        height: fit-content;
+        color: rgb(212, 149, 31);
+        background: linear-gradient(
+          to top,
+          hwb(0 0% 100% / 0.562) 50%,
+          hwb(0 0% 100% / 0.568) 50%
+        );
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        padding: 50px;
+        border: 1px solid rgb(138, 99, 16);
+      }
+
+      .form input {
+        width: 100px;
+        height: 35px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        background: transparent;
+        border-bottom: 1px solid #fff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: rgb(5, 5, 5);
+        font-size: 15px;
+        letter-spacing: 1px;
+        outline: none;
+      }
+      .form input:focus {
+        outline: none;
+      }
+      ::placeholder {
+        color: white;
+        font-family: arial;
+      }
+      button {
+        background: transparent;
+        border: none;
+        background-color: rgb(11, 211, 247);
+        color: white;
+        border: 2px solid rgb(11, 211, 247);
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 16px;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        resize: vertical;
+        display: inline-block;
+      }
+      input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <div class="form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." />
+      <label for="phone">Your Phone number</label>
+      <input
+        type="tel"
+        placeholder="Your phone no.."
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <label for="email">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your mail id.."
+      />
+      <input type="checkbox" id="food1" name="food1" value="food1" />
+      <label for="food1"> Coup Breakfast Wrap</label>
+      <input type="checkbox" id="food2" name="food2" value="food2" />
+      <label for="food2"> Avocado Toast</label>
+      <input type="checkbox" id="food3" name="food3" value="food3" />
+      <label for="food3"> Breakfast Egg Sandwich</label>
+      <input type="checkbox" id="food4" name="food4" value="food4" />
+      <label for="food4"> Chicken and Waffles</label>
+      <input type="checkbox" id="food5" name="food5" value="food5" />
+      <label for="food5"> Burger</label>
+      <input type="checkbox" id="food6" name="food6" value="food6" />
+      <label for="food6"> Dinner Salad</label>
+      <input type="checkbox" id="food7" name="food7" value="food7" />
+      <label for="food7"> Cheese Pizza</label>
+      <input type="checkbox" id="food8" name="food8" value="food8" />
+      <label for="food8"> Grilled Chicken</label>
+      <h4 align="center">
+        <a href="thankyou.html"><button>Submit</button></a>
+      </h4>
+    </div>
+  </body>
+</html>
